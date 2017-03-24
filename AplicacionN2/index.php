@@ -45,7 +45,7 @@ switch(date("m"))
 echo date("Y");
 
 echo "<br>".date("d/m/Y")."<br>";
-
+/*
 switch (date('m')) {
     case '1':
     case '2':
@@ -67,7 +67,23 @@ switch (date('m')) {
     case '11':
         echo "Es primavera";
         break;
-}
+}*/
 
+if(date("z")>=79 && date("z")<=170)
+{
+    echo "Es otoño";
+}
+elseif (date("z")>=171 && date("z")<=262)
+{
+    echo "Es invierno";
+}
+elseif (date("z")>=263 && date("z")<=353)
+{
+    echo "Es primavera";
+}
+else
+{
+    echo "Es verano";
+}
 
 ?>
