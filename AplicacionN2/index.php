@@ -2,47 +2,72 @@
 
 echo date("d")." de ".date("m")." de ".date("Y")."<br>";
 
+echo date("d")." de ";
 switch(date("m"))
 {
     case '1':
-        echo date("d")." de "."Enero"." de ".date("Y");
+        echo "Enero";
         break;
     case '2':
-        echo date("d")." de "."Febrero"." de ".date("Y");
+        echo "Febrero";
         break;
     case '3':
-        echo date("d")." de "."Marzo"." de ".date("Y");
+        echo "Marzo";
         break;
     case '4':
-        echo date("d")." de "."Abril"." de ".date("Y");
+        echo "Abril";
         break;
     case '5':
-        echo date("d")." de "."Mayo"." de ".date("Y");
+        echo "Mayo";
         break;
     case '6':
-        echo date("d")." de "."Junio"." de ".date("Y");
+        echo "Junio";
         break;
     case '7':
-        echo date("d")." de "."Julio"." de ".date("Y");
+        echo "Julio";
         break;
     case '8':
-        echo date("d")." de "."Agosto"." de ".date("Y");
+        echo "Agosto";
         break;
     case '9':
-        echo date("d")." de "."Septiembre"." de ".date("Y");
+        echo "Septiembre";
         break;
     case '10':
-        echo date("d")." de "."Octubre"." de ".date("Y");
+        echo "Octubre";
         break;
     case '11':
-        echo date("d")." de "."Noviembre"." de ".date("Y");
+        echo "Noviembre";
         break;
     case '12':
-        echo date("d")." de "."Diciembre"." de ".date("Y");
+        echo "Diciembre";
         break;
 }
+echo date("Y");
 
-echo "<br>".date("d/m/Y");
+echo "<br>".date("d/m/Y")."<br>";
+
+switch (date('m')) {
+    case '1':
+    case '2':
+    case '12':
+        echo "Es verano";
+        break;
+    case '3':
+    case '4':
+    case '5':
+        echo "Es otoño";
+        break;
+    case '6':
+    case '7':
+    case '8':
+        echo "Es invierno";
+        break;
+    case '9':
+    case '10':
+    case '11':
+        echo "Es primavera";
+        break;
+}
 
 
 ?>
