@@ -72,5 +72,4 @@ switch ($num)
         echo "nueve";
         break;
 }
-
 ?>
