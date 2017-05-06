@@ -1,8 +1,13 @@
 <?php
+
+    function invertirPalabra($pPalabra){
+        for ($i=strlen($pPalabra)-1; $i >= 0; $i--) { 
+        
+            echo $pPalabra[$i];
+        }
+    }
+    
     $palabra = 'HOLA';
     
-    for ($i=strlen($palabra)-1; $i >= 0; $i--) { 
-        
-        echo $palabra[$i];
-    }
+    invertirPalabra($palabra);
 ?>
